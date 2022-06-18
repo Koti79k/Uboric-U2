@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Fashion</title>
+    <link rel="stylesheet"href="fashion.css">
+</head>
+<body>
+    <div id="head">
+        <h3>FOR ONLINE PAYMENT EXTRA ₹100 DISCOUNT ON ORDERS ABOVE ₹500</h3>
+    </div>
+    <div id="heading">
+        <div>
+            <input type="search" id="sea" placeholder="Search here.."/>
+        </div>
+        <div>
+            <img class="image" src="https://www.uboric.com/wp-content/uploads/2018/08/uboric.svg"  alt="error"/>
+        </div>
+        <div>
+            
+            <a href="cart.html">
+                <img class="image2" src="https://thumbs.dreamstime.com/b/add-to-cart-icon-adding-shopping-cart-well-organized-fully-editable-add-to-cart-icon-adding-shopping-cart-any-use-like-167547952.jpg" alt="error"/>
+            </a>
+
+        </div>
+       
+    </div>
+    <div id="navbar">
+        <div>
+          
+           <a href="home.html">HOME </a>
+        </div>
+        <div>
+           <select name="" id="">
+                <option value="none"> Show all Categories</option>
+                <option value= "Fashion" >Fashion</option>
+                <option value=" Accessories"> Accessories</option>
+                <option value="Health & Personal Care">Health & Persoanl Care</option>
+                <option value="Electronics "> Electronics</option>
+                <option value="Electric Appliances">Electric Appliances</option>
+                <option value="Painting">Painting</option>
+                <option value="Anti puncture Liquid ">Anti Puncture Liquid</option>
+                
+
+            </select>
+        </div>
+        <div>
+            <a href="signin.html">Customer/Guest login</a>
+        </div>
+        <div>
+            <a href="Mens.html">Mens</a>
+        </div>
+        <div>
+            <a href="womens.html">Womens</a>
+        </div>
+
+        <div>
+            <a href="electonics.html">Electronics</a>
+        </div>
+
+        <div>
+            <a href="wishlist.html">Wishlist</a>
+        </div>
+
+    </div>
+    <div id="cart">
+        <h1>Mens Fashion</h1>
+        <p>Home >Mens Fashion</p>
+
+    </div>
+    <div id="topimage"><img src="https://wallpaperaccess.com/full/2489679.jpg" alt=""></div>
+    <select name="price" id="price">
+        <option value="none">Sort by price</option>
+        <option value="high">High to Low</option>
+        <option value="low">Low to High</option>
+    </select>
+    <div id="container"></div>
+
+   
+</body>
+
+</html>
+
+<script>
+    var mensData = [
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.47.57-AM-400x600.jpeg",
+            name: "Rubi Cotton Digital Printed half sleve shirt",
+            price: 759,
+            quantity: 1,
+            finalprice: 759,
+            strikedoffprice: "$2599",
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/08/374f71cb-67ad-4c87-9f46-061b9d2ac6a6-400x539.jpg",
+            name: "Rubi Cotton Digital Printed half sleve shirt",
+            price: 699,
+            quantity: 1,
+            finalprice: 699,
+            strikedoffprice: 999,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.47.57-AM-1-400x600.jpeg",
+            name: " Rubi Cotton Digital Printed half sleve shirt",
+            price: 945,
+            quantity: 1,
+            finalprice: 945,
+            strikedoffprice: 2099,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.47.58-AM-400x600.jpeg",
+            name: "Rubi Cotton Digital Printed half sleve shirt",
+            price: 799,
+            quantity: 1,
+            finalprice: 799,
+            strikedoffprice: 799,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.47.58-AM-1-400x600.jpeg",
+            name: "Rubi Cotton Digital Printed half sleve shirt",
+            price: 699,
+            quantity: 1,
+            finalprice: 699,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.47.59-AM-400x601.jpeg ",
+            name: " Rubi Cotton Digital Printed half sleve shirt",
+            price: 679,
+            quantity: 1,
+            finalprice: 679,
+            strikedoffprice: 3199,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.47.59-AM-1-400x600.jpeg ",
+            name: "Rubi Cotton Digital Printed half sleve shirt",
+            price: 789,
+            quantity: 1,
+            finalprice: 789,
+            strikedoffprice: 3199,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.48.00-AM-400x600.jpeg",
+            name: "Rubi Cotton Digital Printed half sleve shirt ",
+            price: 769,
+            quantity: 1,
+            finalprice: 769,
+            strikedoffprice: 1099,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.47.59-AM.jpeg" ,
+            name: "Rubi Cotton Digital Printed half sleve shirt  ",
+            price: 899,
+            
+            quantity: 1,
+            finalprice: 899,
+            strikedoffprice: 1440,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.48.00-AM-1.jpeg ",
+            name: "Rubi Cotton Digital Printed half sleve shirt ",
+            price: 899,
+            quantity: 1,
+            finalprice: 899,
+            strikedoffprice: 999,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.48.01-AM-400x600.jpeg ",
+            name: "Rubi Cotton Digital Printed half sleve shirt  ",
+            price: 999,
+            quantity: 1,
+            finalprice: 999,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.48.01-AM1-400x556.jpeg ",
+            name: "Rubi Cotton Digital Printed half sleve shirt  ",
+            price: 713,
+            quantity: 1,
+            finalprice: 713,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.48.02-AM-576x1024.jpeg ",
+            name: "Rubi Cotton Digital Printed half sleve shirt ",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 999,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-07-at-6.29.41-PM-400x600.jpeg",
+            name: "Rubi Cotton Digital Printed half sleve shirt ",
+            price: 759,
+            quantity: 1,
+            finalprice: 459,
+            strikedoffprice: 3499,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-27-at-11.48.03-AM.jpeg ",
+            name: "Rubi Cotton Digital Printed half sleve shirt  ",
+            price: 900,
+            quantity: 1,
+            finalprice: 900,
+            strikedoffprice: 12000,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/09/e6156abe-854f-41c4-9917-dadf65da3b7d-400x600.jpg ",
+            name: "Rubi Cotton Digital Printed half sleve shirt ",
+            price: 779,
+            quantity: 1,
+            finalprice: 779,
+            strikedoffprice: 1299,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/08/4cc6a415-bd2f-4007-a654-38c07e4819c4-400x446.jpg",
+            name: "Rubi Cotton Digital Printed half sleve shirt ",
+            price: 919,
+            quantity: 1,
+            finalprice: 919,
+            strikedoffprice: 1699,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2022/02/51mRO9X8L._UL1000_-400x400.jpg",
+            name: "FINACHI Premium Cotton t-shirts",
+            price: 788,
+            quantity: 1,
+            finalprice: 788,
+            strikedoffprice: 1699,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2022/02/51ckNZsLWIL._UL1000_-400x400.jpg",
+            name: " FINACHI Premium Cotton t-shirts",
+            price: 875,
+            quantity: 1,
+            finalprice: 875,
+            strikedoffprice: 3499,
+        },
+        {
+            image_url:
+                " https://www.uboric.com/wp-content/uploads/2022/02/61BAZa0u9CL._UL1000_-400x400.jpg",
+            name: "FINACHI Premium Cotton t-shirts",
+            price: 799,
+            quantity: 1,
+            finalprice: 799,
+            strikedoffprice: 4999,
+        },
+        {
+            image_url:
+                " https://www.uboric.com/wp-content/uploads/2022/02/51fMwjUaa1L._UL1000_-400x400.jpg  ",
+            name: "FINACHI Premium Cotton t-shirts ",
+            price: 749,
+            quantity: 1,
+            finalprice: 749,
+            strikedoffprice: 1499,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2022/02/61-Qz6jP4QL._UL1000_-400x400.jpg   ",
+            name: " FINACHI Men Vest Combo Pack ",
+            price: 849,
+            quantity: 1,
+            finalprice: 849,
+            strikedoffprice: 2299,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2022/02/41tpscFGC8L._UL1000_-400x400.jpg  ",
+            name: " FINACHI Premium Cotton t-shirts ",
+            price: 799,
+            quantity: 1,
+            finalprice: 799,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2022/02/41xl2-xcHoL._UL1000_-1-400x400.jpg  ",
+            name: " FINACHI Premium Cotton t-shirts",
+            price: 779,
+            quantity: 1,
+            finalprice: 779,
+            strikedoffprice: 1299,
+        },
+        {
+            image_url:
+                " https://www.uboric.com/wp-content/uploads/2022/02/51s-EmuOnnL._UL1000_-1-400x400.jpg  ",
+            name: " FINACHI Premium Cotton t-shirts",
+            price: 799,
+            quantity: 1,
+            finalprice: 799,
+            strikedoffprice: 4999,
+        },
+        {
+            image_url:
+                " https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-15-at-10.29.59-AM-1-400x544.jpeg ",
+            name: "Pure Cotton Men's printed shirt & Boxer  ",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 4999,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-15-at-10.30.00-AM-400x591.jpeg  ",
+            name: " Pure Cotton Men's printed shirt & Boxer ",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 2799,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-15-at-10.29.57-AM-400x600.jpeg ",
+            name: " Pure Cotton Men's printed shirt & Boxer",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 3499,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-15-at-10.29.58-AM-400x539.jpeg",
+            name: "Pure Cotton Men's printed shirt & Boxer",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 5599,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-15-at-10.29.58-AM-1-400x593.jpeg",
+            name: "Pure Cotton Men's printed shirt & Boxer",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-15-at-10.29.59-AM1-400x600.jpeg",
+            name: "Pure Cotton Men's printed shirt & Boxer",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-23-at-1.02.04-PM-400x498.jpeg",
+            name: "Pure Cotton Men's printed shirt & Boxer",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 9999,
+        },
+        {
+            image_url: "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-23-at-1.02.04-PM-1-400x493.jpeg",
+            name: "Pure Cotton Men's printed shirt & Boxer ",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 2013.45
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-23-at-1.02.04-PM-2-400x396.jpeg",
+            name: "Pure Cotton Men's printed shirt & Boxer",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 1299,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-23-at-1.02.05-PM-400x497.jpeg",
+            name: "Pure Cotton Men's printed shirt & Boxer",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 1299,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-23-at-1.02.05-PM-1-400x491.jpeg ",
+            name: "Pure Cotton Men's printed shirt & Boxer ",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 2499,
+        },
+        {
+            image_url:
+                "https://www.uboric.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-09-23-at-1.02.06-PM-400x493.jpeg",
+            name: "Pure Cotton Men's printed shirt & Boxer",
+            price: 879,
+            quantity: 1,
+            finalprice: 879,
+            strikedoffprice: 1799,
+        },
+    ];
+
+
+    var Products = document.querySelector("#container");
+
+    display(mensData);
+
+  
+
+    
+
+    document.querySelector("#price").addEventListener("change", priceFn)
+    function priceFn() {
+        var selected = document.querySelector("#price").value;
+        console.log(selected);
+
+
+        if (selected == "high") {
+            var output = mensData.sort(function (a, b) {
+                return b.price - a.price
+            });
+            display(output)
+            console.log(output);
+        }
+        else if (selected == "low") {
+            var output = mensData.sort(function (a, b) {
+                return a.price - b.price
+            });
+            display(output)
+            console.log(output);
+        }
+        else {
+            display(mensData);
+        }
+
+    }
+
+    function display(mensData) {
+
+                        
+        document.querySelector("#container").innerHTML = ""
+
+        mensData.forEach(function (elem) {
+            var card = document.createElement("div");
+
+            var image = document.createElement("img");
+            image.src = elem.image_url;
+
+            var h4 = document.createElement("h4");
+            h4.innerText = elem.name;
+
+            var p = document.createElement("p");
+            p.innerText = "₹"+" "+elem.price;
+
+            var sub = document.createElement("div")
+            sub.setAttribute("id","sub")
+
+            var wishlist = document.createElement("button")
+            wishlist.innerText = "Wishlist"
+            wishlist.addEventListener("click", function () {
+                wishlistFn(elem)
+            })
+            var button = document.createElement("button");
+            button.innerText = "Add to Cart";
+            button.addEventListener("click", function () {
+                cartFunc(elem);
+            })
+            sub.append(wishlist, button)
+            card.append(image, h4, p, sub)
+            
+            Products.append(card)
+
+        })
+    }
+    var CartArr = JSON.parse(localStorage.getItem("Cart_Data")) || [];
+    function cartFunc(elem) {
+
+        var bag = CartArr.filter(function (data) {
+            return data == elem;
+        })
+
+        console.log(bag.length)
+        if (bag.length == 0) {
+            CartArr.push(elem)
+            var cart = localStorage.setItem("Cart_Data", JSON.stringify(CartArr));
+            alert("Product Added Successfully");
+
+
+        }
+
+        else {
+            alert("Product already in Cart");
+        }
+
+    }
+
+    var wishlistArr = JSON.parse(localStorage.getItem("Wishlist_Data")) || [];
+
+
+    function wishlistFn(elem) {
+
+       
+        var bag1 = wishlistArr.filter(function(data1) {
+            return data1 == elem;
+        })
+
+        if(bag1.length==0)
+        {
+            console.log(bag1.length)
+            wishlistArr.push(elem)
+            console.log(wishlistArr);
+            localStorage.setItem("Wishlist_Data", JSON.stringify(wishlistArr))
+            //window.location.reload();
+            alert("Product added to Wishlist"); 
+        }
+           
+        else {
+            alert("Product already in Wishlist");
+        }
+
+           
+        }
+
+
+</script>
+  

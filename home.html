@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        #head > h3{
+            width:100%;
+            height:41px;
+            margin:auto;
+            color:white;
+            background-color: #1e516c;
+            font-size: 15px;
+            text-align: center;
+            padding:5px 0px 6px;
+            font-weight: 300;
+            line-height: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+   
+        }
+        #heading{
+            width:100%;
+            height:100px;
+           
+            display:flex;
+            padding-top:20px;
+            background-color:#fff;
+    
+        }
+        #heading> div{
+            width:33%;
+           
+        }
+        #sea{
+            width:100%;
+            height:28px;
+    
+            line-height:normal;
+            position: relative;
+            background: transparent;
+            box-shadow: none;
+            color:rgb(0,0,0);
+            text-shadow: none;
+            margin:-1px 0px 0px -4px;
+            padding-top: 2px;
+            justify-content: center;
+            
+        }
+       
+      
+        .image{
+            width:150px;
+            display:block;
+            margin:auto;
+        }
+        .image2{
+            width:10%;
+            display:block;
+            margin:auto;
+        }
+        .image2:hover{
+            background-color:orange;
+            cursor:pointer;
+        }
+       
+        #navbar{
+            display:flex;
+            justify-content: space-around;
+            width:80%;
+            align-items: center;
+            font-size: 20px;
+            margin:auto
+        }
+        #navbar>div>h3:hover{
+            color:white;
+            background-color: black;
+            cursor:pointer
+        }
+        #navbar > div >select{
+            border:0px;
+            font-size:20px;
+            color:rgb(18, 17, 16);
+            font-weight:bold;
+        }
+        #navbar >div>a{
+        text-decoration: none;
+        color:rgb(16, 15, 15);
+        font-weight:bold;
+
+        }
+        
+        #navbar >div > a:hover{
+            color:white;
+            background-color: black;
+        }
+        #navbar >div >select:hover{
+            color:white;
+            background-color: black;
+        }
+        #first{
+            width:100%;
+            height:500px;
+           
+        }
+        #first>#image3{
+            width:100%;
+            height:100%;
+        }
+        #second{
+            width:60%;
+            height:80px;
+            
+            display:flex;
+            margin:auto;
+            margin-top: 20px;
+        }
+        #second>div{
+            margin:auto;
+            width:30%;
+            height:80px;
+           
+        }
+        #second >div>img{
+            display:block;
+            margin:auto;
+            padding:20px;
+        
+        }
+        #second>div >h1{
+            color:rgb(4, 72, 72);
+            text-align: center;
+        }
+        #third{
+            display:flex;
+            width:100%;
+            height:400px;
+            
+        
+        }
+        #third>div{
+            width:32%;
+            
+            margin:auto;
+        }
+        #third >div>img{
+            width:100%;
+            height:100%;
+        }
+        #third > div> .ph{
+            width:100%;
+            height:370px;
+        }
+        #third>div:hover{
+            max-width:90%;
+            max-height:90%;
+            cursor:pointer;
+           
+      
+        }
+        #fourth{
+            width:100%;
+            
+            margin-top: 20px;
+        }    
+        #fourth >.ph2{
+            width:80%;
+            display:block;
+            margin:auto;
+        }
+        #five{
+            width:100%;
+            height:400px;
+            display:flex;
+           
+            margin:auto;
+            margin-top:20px;
+        }
+        #five>div{
+            width:45%;
+            height:400px;
+            margin:auto;
+           
+        }
+        #five>div>img:hover{
+            max-width:100%;
+            max-height:100%;
+            cursor:pointer;
+        }
+        #six{
+            width:80%;
+            margin:auto;
+            height:300px;
+           
+            margin-top: 20px;
+        }
+        #six >img{
+            width:100%;
+            height:100%;
+        }
+        #six >img:hover{
+            max-width:97%;
+            max-height:97%;
+            cursor:pointer;
+        }
+        #seven{
+            width:100%;
+            height:400px;
+            display:flex;
+            margin:auto;
+           
+            margin-top: 40px;
+            border-radius: 2px;
+        }
+        #seven>div{
+            width:18%;
+            height:400px;
+            margin:auto;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          
+        }
+        #seven>div> img{
+            width:100%;
+            height:100%;
+
+        }
+        #seven >div>img:hover{
+            max-width:98%;
+            max-height:98%;
+            cursor:pointer;
+        }
+        #eight{
+            width:95%;
+            height:350px;
+            
+            margin:auto;
+            margin-top:40px;
+        }
+        #eight >div>img{
+            width:100%;
+            height:350px;
+        }
+        #eight>div>img:hover{
+            max-width:97%;
+            max-height:97%;
+            cursor:pointer;
+        }
+        #end{
+            width:70%;
+            
+            margin:auto;
+           
+            margin-top:50px;
+            background-color:rgba(213, 211, 211, 0.974)
+
+        }
+        #end>h1{
+            text-align:center;
+            color:teal;
+            font-size:30px;
+           
+
+        }
+        #end>p{
+            font-size:19px;
+            margin-top:20px;
+            line-height:-3px;
+            
+            
+            
+        }
+        #review{
+            width:100%;
+            height:600px;
+          
+            background-color:rgba(113, 100, 4, 0.825);
+            
+           
+            
+        }
+        #review >h1{
+            display:block;
+            text-align: center;
+            color: #ffffff;
+             font-size: 36px;
+            font-weight: 500;
+           
+             letter-spacing: -1px;
+             margin-bottom:40px;
+        }
+        #mes{
+            width:80%;
+            height:400px;
+            display:flex;
+            margin:auto;
+            margin-top:60px;
+
+        }
+        #mes>div{
+            width:25%;
+          
+            margin:auto;
+            height:400px;
+
+        }
+        #mes>div>h3{
+            color:#ffffff;
+            text-align:center;
+            line-height: 36px;
+            font-weight: var( --e-global-typography-text-font-weight );
+            
+        }
+        #mes>div>h5{
+            color:#ffffff;
+            text-align:center;
+            text-transform: none !important;
+            letter-spacing: 1px !important;
+             font-size: 15px !important;
+            font-weight: 400;
+            margin-top:20px;
+        }
+       
+        #mes>div>#star{
+            width:20%;
+            height:30px;
+           
+            display:block;
+            margin:auto;
+        }
+        button{
+            display:block;
+            margin:auto;
+            height:45px;
+            width:10%;
+            border-radius: 5px;
+            font-weight: 400;
+              fill: #000000;
+             color: #000000;
+             background-color: #FFCE61;
+
+        }
+        button:hover{
+            background-color: #ffffff;
+            cursor:pointer;
+        }
+        #butt{
+            width:100%;
+            height:500px;
+            border:1px solid #000000;
+            background-color: #000000;
+        }
+        #butt>img{
+            width:25%;
+            height:100px;
+            /* border:1px solid yellow; */
+            display:block;
+            margin:auto;
+            margin-top:60px;
+        }
+        #butt2{
+            width:70%;
+            height:70px;
+            display:flex;
+            /* border:1px solid red; */
+            margin:auto;
+            margin-top:10px;
+            background-color: #000000;
+        }
+        #butt2>div{
+            width:12%;
+            text-align: center;
+            margin:auto;
+           
+            /* border:1px solid yellow; */
+        }
+        #butt2>div>h3{
+            text-align:center;
+            color:#ffffff;
+            background-color: #000000;
+        }
+        #butt2>div>h3:hover{
+            color:#FFCE61;
+            cursor:pointer;
+        }
+        #final{
+            width:40%;
+            height:40px;
+            /* border:1px solid red; */
+            margin:auto;
+            margin-top: 30px;
+        }
+        #final>h3{
+            text-align: center;
+            color:#ffffff;
+            font-weight: inherit;
+        }
+        
+       
+
+
+
+    
+        
+     
+    </style>
+</head>
+<body>
+    <div id="head">
+        <h3>FOR ONLINE PAYMENT EXTRA ₹100 DISCOUNT ON ORDERS ABOVE ₹500</h3>
+    </div>
+    <div id="heading">
+        <div>
+            <input type="search" id="sea" placeholder="Search here.."/>
+        </div>
+        <div>
+            <img class="image" src="https://www.uboric.com/wp-content/uploads/2018/08/uboric.svg"  alt="error"/>
+        </div>
+        <div>
+            
+            <a href="cart.html">
+                <img class="image2" src="https://thumbs.dreamstime.com/b/add-to-cart-icon-adding-shopping-cart-well-organized-fully-editable-add-to-cart-icon-adding-shopping-cart-any-use-like-167547952.jpg" alt="error"/>
+            </a>
+
+        </div>
+       
+    </div>
+    <div id="navbar">
+        <div>
+           <h3>HOME</h3> 
+        </div>
+        <div>
+           <select name="" id="">
+                <option value="none"> Show all Categories</option>
+                <option value= "Fashion" >Fashion</option>
+                <option value=" Accessories"> Accessories</option>
+                <option value="Health & Personal Care">Health & Persoanl Care</option>
+                <option value="Electronics "> Electronics</option>
+                <option value="Electric Appliances">Electric Appliances</option>
+                <option value="Painting">Painting</option>
+                <option value="Anti puncture Liquid ">Anti Puncture Liquid</option>
+                
+
+            </select>
+        </div>
+        <div>
+            <a href="signin.html">Customer/Guest login</a>
+        </div>
+        <div>
+            <a href="Mens.html">Mens</a>
+        </div>
+        <div>
+            <a href="womens.html">Womens</a>
+        </div>
+
+        <div>
+            <a href="electonics.html">Electronics</a>
+        </div>
+
+        <div>
+            <a href="wishlist.html">Wishlist</a>
+        </div>
+
+    </div>
+    <div id="first">
+        
+            <img id="image3" src="https://wallpaperaccess.com/full/2489679.jpg" alt="error"/> -->
+            
+        
+    </div>
+
+    <div id="second">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/kitchen-ware-heading-pkx8tvxfmbbsdlrzrk3iwlbxruc7cn5sq339xkx9cg.png" alt="error"/>
+
+        </div>
+        <div>
+            <h1>KICTHEN WARE</h1>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/kitchen-ware-heading-pkx8tvxfmbbsdlrzrk3iwlbxruc7cn5sq339xkx9cg.png" alt="error"/>
+        </div>
+
+
+    </div>
+    <div id="third">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/kithchen-tools-768x602.jpg" alt="error"/>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Air-Tight-Containers-768x602.jpg" alt="error"/>
+        </div>
+        <div>
+            <img class="ph" src="https://www.uboric.com/wp-content/uploads/2020/12/Gas-Lighter-1024x1024.jpg" alt="error"/>
+        </div>
+    </div>
+    <div id="fourth">
+        <img class="ph2" src="https://www.uboric.com/wp-content/uploads/2020/08/Uboric-1.jpg"alt="error"/>
+    </div>
+
+  
+     <div id="second">
+            <div>
+                <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/other-category-heading-pkx8tu1r8n97qduq2ja9rlt0l2lgx8yc1tsaz101ow.png" alt="error"/>
+    
+            </div>
+            <div>
+                <h1>OTHER CATEGORIES</h1>
+            </div>
+            <div>
+                <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/other-category-heading-pkx8tu1r8n97qduq2ja9rlt0l2lgx8yc1tsaz101ow.png" alt="error"/>
+            </div>
+
+    </div>
+    <div id="five">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2021/12/banner1-1-1.jpg" alt="error"/>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2021/12/banner2-1.jpg" alt="error"/>
+        </div>
+
+    </div>
+
+    <div id="six">
+        <img src="https://www.uboric.com/wp-content/uploads/2021/02/Headphone.jpg" alt="error"/>
+
+    </div>
+
+    <div id="five">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2021/12/banner3-1.jpg" alt="error"/>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2021/12/banner4-1.jpg" alt="error"/>
+        </div>
+
+    </div>
+
+    <div id="seven">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Socks-400x601.jpg" alt="error"/>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Personal-Care-400x601.jpg" alt="error"/>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Braclate-400x601.jpg" alt="error"/>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Grocery-400x601.jpg" alt="error"/>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Health-Care-400x601.jpg
+            " alt="error"/>
+        </div>
+    </div>
+
+    <div id="second" style="margin-top:40px;">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/spices-heading-2-e1608267173425-pkx8te2i0gnc90hxnudm37u6his8ae6wbmp1tbnqmo.png
+            " alt="error"/>
+
+        </div>
+        <div>
+            <h1>SPICES</h1>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/spices-heading-2-e1608267173425-pkx8te2i0gnc90hxnudm37u6his8ae6wbmp1tbnqmo.png
+            " alt="error"/>
+        </div>
+
+    </div>
+
+    <div id="seven" style="margin-top:40px">
+    <div>
+        <img src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-1-400x601.jpg" alt="error"/>
+    </div>
+    <div>
+        <img src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-2-400x601.jpg" alt="error"/>
+    </div>
+    <div>
+        <img src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-3-400x601.jpg" alt="error"/>
+    </div>
+    <div>
+        <img src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-5-400x601.jpg" alt="error"/>
+    </div>
+    <div>
+        <img src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-4-400x601.jpg" alt="error"/>
+    </div>
+    </div>
+
+    <div id="second" style="margin-top:40px;">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/shoes-icon-right-e1605175492472-pkxdahmpc96i32hqyh9qfkc7owqxivqr4zuwukso7k.png
+            " alt="error"/>
+
+        </div>
+        <div>
+            <h1>FOOT WEAR</h1>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/shoes-icon-right-e1605175492472-pkxdahmpc96i32hqyh9qfkc7owqxivqr4zuwukso7k.png
+            " alt="error"/>
+        </div>
+
+    </div>
+
+    <div id="eight">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/men-fashion-pf2rgkwglk7z47uh031vpxcshl64adc389ivxapmss.jpg" alt="error"/>
+        </div>
+
+    </div>
+
+    <div id="seven">
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-1-400x601.jpg" alt="error"/>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-3-400x601.jpg" alt="error"/>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-2-400x601.jpg" alt="error"/>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-400x601.jpg" alt="error"/>
+        </div>
+        <div>
+            <img src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-5-400x601.jpg" alt="error"/>
+        </div>
+    </div>
+
+    <div id="end">
+        <h1>The Ultimate Domestic Online Shopping Experience Platform in India</h1>
+        <p>
+            Online shopping with Uboric is quick, convenient and trouble-free. You can shop for the desired product right from the comfort of your home and get 
+            them delivered straight to your doorstep. Uboric offers you the chance to choose top branded products sitting in the comfort of your homes and just 
+            clicking on your requirements to get it delivered at your doorstep. Your search for the latest trending variety of unique products ends right here. 
+            A wide range of international products from global brands are available at your fingertips. We provide you with a world-class online shopping experience,
+             along with superior service, to suit all your specific requirements. Our products are very reasonably priced and are not easily available elsewhere. 
+             Our high-end technology-based systems, combined with a human approach, ensure that you have an amazing and blissful online shopping experience with us.
+              Our emphasis on customer delight drives every activity we undertake to provide you an ultimate, hassle-free and pleasant shopping experience. 
+              Our diverse categories of products comprise of fashion & jewellery, mobiles and tablets, home and furniture, electronics, health care and supplements,
+               sports and fitness, beauty and perfumes. We offer almost every variety of product that your heart desires. Just Go Ahead and Explore the magical world 
+               of online shopping with Uboric! 24×7 Customer Care: For all your queries and concerns regarding your shopping orders.
+        </p>
+        <h1>Benefits of shopping on Uboric :</h1>
+    
+    </div>
+
+    <div id="review">
+        <h1>What Our Customer Says</h1>
+        <div id="mes">
+            <div>
+                <h3>Best app for all the footwear needs. All product are genius and the services are 100% guranteeed.</h3>
+                <h5>harshil Patelvs </h5>
+                <img id="star"   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBvV7YLOqc8cixb3L6h-qByPM9-SKtGl0OSg&usqp=CAU"alt=""/>
+                <h5>Customer Reviews </h5>
+            </div>
+            <div>
+                <h3>Amazing veriaty of shoes in all brand......... Best showroom in rajkot.</h3>
+                <h5>milan kacha </h5>
+                <img id="star"   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBvV7YLOqc8cixb3L6h-qByPM9-SKtGl0OSg&usqp=CAU"alt=""/>
+                <h5>Customer Reviews </h5>
+            </div>
+            <div>
+                <h3>Very big range of product and the services are very fast. i ordered footwear and they delivered very quick.</h3>
+                <h5>Ishan shah</h5>
+                <img id="star"   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBvV7YLOqc8cixb3L6h-qByPM9-SKtGl0OSg&usqp=CAU"alt=""/>
+                <h5>Customer Reviews </h5>
+            </div>
+        </div>
+        <button>Add Your review</button>
+
+       
+    </div>
+    <div id="butt">
+        <img src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png"alt=""/>
+        <div id="butt2">
+            <div><h3>About Us</h3></div>
+            <div><h3>Contact</h3></div>
+            <div><h3>Shipping & Returns</h3></div>
+            <div><h3>My Account</h3></div>
+            <div><h3>Privacy Policy</h3></div>
+            <div><h3>Become A Seller</h3></div>
+            <div><h3> Terms & Conditions</h3></div>
+        </div>
+        <div id="final">
+            <h3>© 2019 – 2021 UBORIC. ALL RIGHTS RESERVED.</h3>
+        </div>
+    </div>
+
+    
+
+
+
+
+    
+
+
+
+
+</body>
+</html>

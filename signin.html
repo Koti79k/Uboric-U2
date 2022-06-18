@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login /Sign up Form</title>
+    <link rel="stylesheet"href="sign.css">
+</head>
+<body>
+
+    
+    <div id="head">
+        <h3>FOR ONLINE PAYMENT EXTRA ₹100 DISCOUNT ON ORDERS ABOVE ₹500</h3>
+    </div>
+    <div id="heading">
+        <div>
+            <input type="search" id="sea" placeholder="Search here.."/>
+        </div>
+        <div>
+            <img class="image" src="https://www.uboric.com/wp-content/uploads/2018/08/uboric.svg"  alt="error"/>
+        </div>
+        <div>
+            <img class="image2" src="https://thumbs.dreamstime.com/b/add-to-cart-icon-adding-shopping-cart-well-organized-fully-editable-add-to-cart-icon-adding-shopping-cart-any-use-like-167547952.jpg" alt="error"/>
+            <a href="cart.html"></a>
+
+        </div>
+       
+    </div>
+    <div id="navbar">
+        <div>
+           
+           <a href="home.html">HOME </a>
+        </div>
+        <div>
+           <select name="" id="">
+                <option value="none"> Show all Categories</option>
+                <option value= "Fashion" >Fashion</option>
+                <option value=" Accessories"> Accessories</option>
+                <option value="Health & Personal Care">Health & Persoanl Care</option>
+                <option value="Electronics "> Electronics</option>
+                <option value="Electric Appliances">Electric Appliances</option>
+                <option value="Painting">Painting</option>
+                <option value="Anti puncture Liquid ">Anti Puncture Liquid</option>
+                
+
+            </select>
+        </div>
+        <div>
+            <a href="signin.html">Customer/Guest login</a>
+        </div>
+        <div>
+            <a href="Mens.html">Mens</a>
+        </div>
+        <div>
+            <a href="womens.html">Womens</a>
+        </div>
+
+        <div>
+            <a href="electonics.html">Electronics</a>
+        </div>
+
+        <div>
+            <a href="wishlist.html">Wishlist</a>
+        </div>
+
+    </div>
+    <div id="cart">
+        <h1>My Account</h1>
+        <p>Home > My Account</p>
+
+    </div>
+    
+
+   
+    <div class="container">
+        <form class="form"id="login">
+            <h1 class="form-title">Log in</h1>
+            <div class="form-message form-message-error"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" id="roy" autofocus placeholder="Username or email">
+                <div class="form-input-error-message"></div>
+            </div>
+
+            <div class="form-input-group">
+                <input type="password" class="form-input" id="roy1" autofocus placeholder="Password">
+                <div class="form-input-error-message"></div>
+            </div>
+
+            <input type="submit" class="form-button" value="Sign in">
+
+            <p class="form-text">
+                <a href="#"class="form-link">Forgot your password?</a>
+            </p>
+
+            <p class="form-text">
+                <a class="form-link" href="signup.html">Don't have an account? Create account</a>
+            </p>
+           
+        </form>   
+    </div>
+    <div id="review">
+        <h1>What Our Customer Says</h1>
+        <div id="mes">
+            <div>
+                <h3>Best app for all the footwear needs. All product are genius and the services are 100% guranteeed.</h3>
+                <h5>harshil Patelvs </h5>
+                <img id="star"   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBvV7YLOqc8cixb3L6h-qByPM9-SKtGl0OSg&usqp=CAU"alt=""/>
+                <h5>Customer Reviews </h5>
+            </div>
+            <div>
+                <h3>Amazing veriaty of shoes in all brand......... Best showroom in rajkot.</h3>
+                <h5>milan kacha </h5>
+                <img id="star"   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBvV7YLOqc8cixb3L6h-qByPM9-SKtGl0OSg&usqp=CAU"alt=""/>
+                <h5>Customer Reviews </h5>
+            </div>
+            <div>
+                <h3>Very big range of product and the services are very fast. i ordered footwear and they delivered very quick.</h3>
+                <h5>Ishan shah</h5>
+                <img id="star"   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBvV7YLOqc8cixb3L6h-qByPM9-SKtGl0OSg&usqp=CAU"alt=""/>
+                <h5>Customer Reviews </h5>
+            </div>
+        </div>
+        <button>Add Your review</button>
+
+       
+    </div>
+    <div id="butt">
+        <img src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png"alt=""/>
+        <div id="butt2">
+            <div><h3>About Us</h3></div>
+            <div><h3>Contact</h3></div>
+            <div><h3>Shipping & Returns</h3></div>
+            <div><h3>My Account</h3></div>
+            <div><h3>Privacy Policy</h3></div>
+            <div><h3>Become A Seller</h3></div>
+            <div><h3> Terms & Conditions</h3></div>
+        </div>
+        <div id="final">
+            <h3>© 2019 – 2021 UBORIC. ALL RIGHTS RESERVED.</h3>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    var ganeshone=JSON.parse(localStorage.getItem("ganesh"))||{}
+    document.querySelector("form").addEventListener("submit",lol);
+    function lol(){
+        event.preventDefault();
+        var disco={
+            le:login.roy.value,
+            lp:login.roy1.value
+        };
+        if(ganeshone==null){
+            alert("Create Account");
+        }
+        else if(ganeshone.ue==disco.le && ganeshone.up==disco.lp){
+            alert("login Successful");
+            window.location.href="home.html"
+        }
+        else{
+            alert("user Does'nt exist")
+        }
+    }
+</script>

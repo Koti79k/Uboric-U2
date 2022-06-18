@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womens Fashion</title>
+    <link rel="stylesheet"href="fashion.css">
+</head>
+<body>
+    <div id="head">
+        <h3>FOR ONLINE PAYMENT EXTRA ₹100 DISCOUNT ON ORDERS ABOVE ₹500</h3>
+    </div>
+    <div id="heading">
+        <div>
+            <input type="search" id="sea" placeholder="Search here.."/>
+        </div>
+        <div>
+            <img class="image" src="https://www.uboric.com/wp-content/uploads/2018/08/uboric.svg"  alt="error"/>
+        </div>
+        <div>
+            
+            <a href="cart.html">
+                <img class="image2" src="https://thumbs.dreamstime.com/b/add-to-cart-icon-adding-shopping-cart-well-organized-fully-editable-add-to-cart-icon-adding-shopping-cart-any-use-like-167547952.jpg" alt="error"/>
+            </a>
+
+        </div>
+       
+    </div>
+    <div id="navbar">
+        <div>
+           
+           <a href="home.html">HOME </a>
+        </div>
+        <div>
+           <select name="" id="">
+                <option value="none"> Show all Categories</option>
+                <option value= "Fashion" >Fashion</option>
+                <option value=" Accessories"> Accessories</option>
+                <option value="Health & Personal Care">Health & Persoanl Care</option>
+                <option value="Electronics "> Electronics</option>
+                <option value="Electric Appliances">Electric Appliances</option>
+                <option value="Painting">Painting</option>
+                <option value="Anti puncture Liquid ">Anti Puncture Liquid</option>
+                
+
+            </select>
+        </div>
+        <div>
+            <a href="signin.html">Customer/Guest login</a>
+        </div>
+        <div>
+            <a href="Mens.html">Mens</a>
+        </div>
+        <div>
+            <a href="womens.html">Womens</a>
+        </div>
+
+        <div>
+            <a href="electonics.html">Electronics</a>
+        </div>
+
+        <div>
+            <a href="wishlist.html">Wishlist</a>
+        </div>
+
+    </div>
+    <div id="cart">
+        <h1>Womens Fashion</h1>
+        <p>Home > Womens Fashion</p>
+
+       
+        <div id="topimage"><img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/a20271c6-249f-480b-bcc7-1b150516e54e1651599573998-Dressberry_Desk.jpg" alt=""></div>
+        <select name="price" id="price">
+            <option value="none">Sort by price</option>
+            <option value="high">High to Low</option>
+            <option value="low">Low to High</option>
+        </select>
+        <div id="container"></div>
+       
+    </body>
+    
+    </html>
+    
+    <script>
+        var womensData = [
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-05-at-5.55.06-PM1-400x600.jpeg",
+                name: "Banasari silk saree collections in marron ",
+                price: 1549,
+                quantity: 1,
+                finalprice: 1549,
+                strikedoffprice: 1799
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-05-at-5.55.46-PM1-400x400.jpeg",
+                name: "Banasari silk saree collections in pink",
+                price: 1249,
+                quantity: 1,
+                finalprice: 1249,
+                strikedoffprice: 1749
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-05-at-5.54.29-PM-Copy-Copy-400x601.jpeg",
+                name: "Banasari silk saree collections in rama..",
+                price: 699,
+                quantity: 1,
+                finalprice: 699,
+                strikedoffprice: 1245
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-05-at-5.54.50-PM2-400x560.jpeg",
+                name: "Banasari silk saree collections in red/pink",
+                price: 749,
+                quantity: 1,
+                finalprice: 749,
+                strikedoffprice: 1299
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-03-at-7.25.27-PM2-400x489.jpeg",
+                name: "Beautiful rich pallu & jacquard work",
+                price: 749,
+                quantity: 1,
+                finalprice: 749,
+                strikedoffprice: 1299
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-03-at-7.26.35-PM-400x400.jpeg",
+                name: "Designer printed lahenga choli in black",
+                price: 1399,
+                quantity: 1,
+                finalprice: 1399,
+                strikedoffprice: 2799
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-03-at-7.27.19-PM1-400x400.jpeg",
+                name: "Designer printed lahenga choli in pink",
+                price: 1099,
+                quantity: 1,
+                finalprice: 1099,
+                strikedoffprice: 1249
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-03-at-7.27.01-PM-400x500.jpeg",
+                name: "Designer printed lahenga choli in pink&yellow",
+                price: 1249,
+                quantity: 1,
+                finalprice: 1249,
+                strikedoffprice: 1489
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-03-at-7.26.49-PM-400x500.jpeg",
+                name: "Designer Printed lahenga choli in sea..",
+                price: 2459,
+                quantity: 1,
+                finalprice: 2459,
+                strikedoffprice: 1635
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-14-at-7.20.03-PM-1-400x400.jpeg",
+                name: "Dulhan lehenga choli wedding lehenga choli..",
+                price: 4449,
+                quantity: 1,
+                finalprice: 4449,
+                strikedoffprice: 2599
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-14-at-7.20.02-PM1-400x402.jpeg",
+                name: "Dulhan lehenga choli wedding lehenga choli..",
+                price: 4449,
+                quantity: 1,
+                finalprice: 4449,
+                strikedoffprice: 2599
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-14-at-7.22.03-PM-400x500.jpeg",
+                name: "Dulhan lehenga choli wedding lehenga choli..",
+                price: 3899,
+                quantity: 1,
+                finalprice: 3899,
+                strikedoffprice: 6599
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-14-at-7.19.21-PM-400x500.jpeg",
+                name: "Dulhan lehenga choli wedding lehenga choli..",
+                price: 3949,
+                quantity: 1,
+                finalprice: 3949,
+                strikedoffprice: 1899
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-14-at-7.20.57-PM2-400x533.jpeg",
+                name: "Dulhan lehenga choli wedding lehenga choli..S ",
+                price: 3549,
+                quantity: 1,
+                finalprice: 3549,
+                strikedoffprice: 1799
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-25-at-4.45.00-PM-1-400x500.jpeg",
+                name: "Dulhan lehenga choli wedding lehenga choli..",
+                price: 3249,
+                quantity: 1,
+                finalprice: 3249,
+                strikedoffprice: 1749
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-14-at-7.22.31-PM-400x439.jpeg",
+                name: "Dulhan lehenga choli wedding lehenga choli..",
+                price: 4349,
+                quantity: 1,
+                finalprice: 4349,
+                strikedoffprice: 1245
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/071MI-D-544.png",
+                name: "Admirable Mehendi green summer cool printed",
+                price: 749,
+                quantity: 1,
+                finalprice: 749,
+                strikedoffprice: 1299
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/100MI-D-549.png",
+                name: "Adorable Amaze Faux Crepe printed",
+                price: 749,
+                quantity: 1,
+                finalprice: 749,
+                strikedoffprice: 1299
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/112MI-D-552.png",
+                name: "Adorable Amaze Faux Crepe printed",
+                price: 1399,
+                quantity: 1,
+                finalprice: 1399,
+                strikedoffprice: 2799
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/001MI-D-531.png",
+                name: "Adorable Amaze Faux Crepe printed",
+                price: 1099,
+                quantity: 1,
+                finalprice: 1099,
+                strikedoffprice: 1249,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/164MI-D-562.png",
+                name: "Adorable Amaze Faux Crepe printed",
+                price: 1249,
+                quantity: 1,
+                finalprice: 1249,
+                strikedoffprice: 1489,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/174MI-D-564.png",
+                name: "Adorable Amaze Faux Crepe printed",
+                price: 1459,
+                quantity: 1,
+                finalprice: 1459,
+                strikedoffprice: 1835,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/077MI-D-545.png",
+                name: "Adorable Amaze Faux Crepe printed",
+                price: 849,
+                quantity: 1,
+                finalprice: 849,
+                strikedoffprice: 2599,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/106MI-D-551.png",
+                name: "Adorable Amaze Faux Crepe printed",
+                price: 1550,
+                quantity: 1,
+                finalprice: 1550,
+                strikedoffprice: 2599,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/025MI-D-535.png",
+                name: "Blend Well Beautifull Blue Faux crepe..",
+                price: 999,
+                quantity: 1,
+                finalprice: 999,
+                strikedoffprice: 6599,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/148MI-D-558.png",
+                name: "Blue summer cool kuti Tunic",
+                price: 549,
+                quantity: 1,
+                finalprice: 549,
+                strikedoffprice: 1899,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/077MI-D-545.png.",
+                name: "Bright As summer cool printed",
+                price: 1549,
+                quantity: 1,
+                finalprice: 1549,
+                strikedoffprice: 1799,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/118MI-D-553.png",
+                name: "Bright As summer cool printed",
+                price: 1249,
+                quantity: 1,
+                finalprice: 1249,
+                strikedoffprice: 1749,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/055MI-D-541.png",
+                name: "Bright As summer cool printed",
+                price: 699,
+                quantity: 1,
+                finalprice: 699,
+                strikedoffprice: 1245,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/083MI-D-546.png",
+                name: "Bright As summer cool printed",
+                price: 749,
+                quantity: 1,
+                finalprice: 749,
+                strikedoffprice: 1299,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/007MI-D-532.png",
+                name: "Bright As summer cool printed",
+                price: 749,
+                quantity: 1,
+                finalprice: 749,
+                strikedoffprice: 1299,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/01/031MI-D-536.png",
+                name: "Bright As summer cool printed",
+                price: 1399,
+                quantity: 1,
+                finalprice: 1399,
+                strikedoffprice: 2799,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-15-at-11.59.33-AM-400x484.jpeg",
+                name: "Pallu & jackquard work with in black",
+                price: 3099,
+                quantity: 1,
+                finalprice: 3099,
+                strikedoffprice: 1249,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-14-at-7.21.27-PM-400x500.jpeg",
+                name: "Dulhan lehanga choli,wedding lehanga choli..",
+                price: 3249,
+                quantity: 1,
+                finalprice: 3249,
+                strikedoffprice: 1489,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-04-at-6.18.25-PM.jpeg",
+                name: "Dupatta havy butterfly net in blue",
+                price: 4459,
+                quantity: 1,
+                finalprice: 4459,
+                strikedoffprice: 1235
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-03-at-7.27.35-PM1-400x440.jpeg",
+                name: "Fabric heavy sattin zari silk",
+                price: 2849,
+                quantity: 1,
+                finalprice: 2849,
+                strikedoffprice: 2599,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-25-at-12.48.22-PM-400x499.jpeg",
+                name: "Fancy ruffle & sequence work",
+                price: 3550,
+                quantity: 1,
+                finalprice: 3550,
+                strikedoffprice: 2599,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-20-at-6.33.05-PM-1-400x500.jpeg",
+                name: "Fancy ruffle & sequence work",
+                price: 4399,
+                quantity: 1,
+                finalprice: 4399,
+                strikedoffprice: 6599,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-20-at-6.33.19-PM-1-400x500.jpeg",
+                name: "Havy dola silk digital print saree",
+                price: 3949,
+                quantity: 1,
+                finalprice: 3949,
+                strikedoffprice: 1899,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-20-at-6.51.18-PM-2-400x500.jpeg",
+                name: "Havy dola silk digital print saree",
+                price: 3549,
+                quantity: 1,
+                finalprice: 3549,
+                strikedoffprice: 1799,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-25-at-4.45.00-PM-1-400x500.jpeg",
+                name: "Heavy butter silk with digital printed",
+                price: 1249,
+                quantity: 1,
+                finalprice: 1249,
+                strikedoffprice: 1749,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-12-at-2.40.26-AM-1-400x533.jpeg",
+                name: "Heavy dola silk in orange",
+                price: 1699,
+                quantity: 1,
+                finalprice: 1699,
+                strikedoffprice: 1245,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-12-at-2.40.22-AM-400x533.jpeg",
+                    
+                name: "Heavy dola silk in pinch",
+                price: 1749,
+                quantity: 1,
+                finalprice: 1749,
+                strikedoffprice: 1299,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-12-at-2.40.24-AM1-400x532.jpeg",
+                name: "Heavy dola silk in rama green",
+                price: 1749,
+                quantity: 1,
+                finalprice: 1749,
+                strikedoffprice: 1299,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-12-at-2.40.26-AM-400x533.jpeg",
+                name: "Heavy dola silk in yellow",
+                price: 1399,
+                quantity: 1,
+                finalprice: 1399,
+                strikedoffprice: 2799,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-19-at-8.02.51-PM-400x600.jpeg",
+                name: "New Launching Gangubai Saree in white",
+                price: 1099,
+                quantity: 1,
+                finalprice: 1099,
+                strikedoffprice: 1249,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-16-at-10.48.22-PM-400x471.jpeg",
+                name: "PALLU & Jackquard work in black",
+                price: 1249,
+                quantity: 1,
+                finalprice: 1249,
+                strikedoffprice: 1489,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-15-at-11.59.33-AM-400x484.jpeg",
+                name: "PALLU & Jackquard work in black",
+                price: 1459,
+                quantity: 1,
+                finalprice: 1459,
+                strikedoffprice: 1235,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-16-at-5.52.20-PM-3-400x575.jpeg",
+                name: "PALLU & Jackquard work in black",
+                price: 1849,
+                quantity: 1,
+                finalprice: 1849,
+                strikedoffprice: 2599,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-15-at-11.58.07-AM-1-400x499.jpeg",
+                name: "PALLU & Jackquard work in black",
+                price: 1550,
+                quantity: 1,
+                finalprice: 1550,
+                strikedoffprice: 2599,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-16-at-10.48.24-PM-400x465.jpeg",
+                name: "PALLU & Jackquard work in Blue",
+                price: 1399,
+                quantity: 1,
+                finalprice: 1399,
+                strikedoffprice: 6599,
+            },
+            {
+                image_url:
+                    "https://www.uboric.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-16-at-10.48.22-PM-2-400x500.jpeg",
+                name: "PALLU & Jackquard work in Brown",
+                price: 1949,
+                quantity: 1,
+                finalprice: 1949,
+                strikedoffprice: 1899,
+            },
+           
+           
+           
+        ];
+    
+        // localStorage.setItem("womens_Product",JSON.stringify(womensData));
+    
+    
+        var Products = document.querySelector("#container");
+        display(womensData)
+    
+      
+        
+    
+         document.querySelector("#price").addEventListener("change", priceFn)
+            function priceFn() {
+                var selected = document.querySelector("#price").value;
+                console.log(selected);
+    
+    
+                if (selected == "high") {
+                    var output = womensData.sort(function (a, b) {
+                        return b.price - a.price
+                    });
+                    display(output)
+                    console.log(output);
+                }
+                else if (selected == "low") {
+                    var output = womensData.sort(function (a, b) {
+                        return a.price - b.price
+                    });
+                    display(output)
+                    console.log(output);
+                }
+                else {
+                    display(womensData);
+                }
+    
+            }
+    
+        function display(womensData) {
+    
+            document.querySelector("#container").innerHTML = ""
+    
+            womensData.forEach(function (elem) {
+                var card = document.createElement("div");
+    
+                var image = document.createElement("img");
+                image.src = elem.image_url;
+    
+                var h4 = document.createElement("h4");
+                h4.innerText = elem.name;
+    
+                var p = document.createElement("p");
+                p.innerText = "₹"+" "+elem.price;
+    
+                var sub = document.createElement("div")
+                sub.setAttribute("id","sub")
+                
+    
+                var wishlist = document.createElement("button")
+                wishlist.innerText = "Wishlist"
+                wishlist.addEventListener("click", function () {
+                    wishlistFn(elem)
+                })
+    
+                var button = document.createElement("button");
+                button.innerText = "Add to Cart";
+                button.addEventListener("click", function () {
+                    cartFunc(elem);
+                })
+    
+                sub.append(wishlist,button)
+    
+                card.append(image, h4, p, sub)
+                document.querySelector("#container").append(card)
+            })
+        }
+    
+    
+        var CartArr = JSON.parse(localStorage.getItem("Cart_Data")) || [];
+    
+        function cartFunc(elem) {
+    
+           
+            var bag = CartArr.filter(function (data) {
+                return data == elem;
+            })
+            if (bag.length == 0) {
+                console.log(elem)
+                CartArr.push(elem);
+                localStorage.setItem("Cart_Data", JSON.stringify(CartArr));
+                alert("Product Added Successfully")
+    
+            }
+    
+            else {
+                alert("Product already in Cart")
+            }
+    
+        }
+    
+        var wishlistArr = JSON.parse(localStorage.getItem("Wishlist_Data")) || [];
+    
+    
+        function wishlistFn(elem) {
+    
+           
+            var bag1 = wishlistArr.filter(function(data1) {
+                return data1 == elem;
+            })
+    
+            if(bag1.length==0)
+            {
+                console.log(bag1.length)
+                wishlistArr.push(elem)
+                console.log(wishlistArr);
+                localStorage.setItem("Wishlist_Data", JSON.stringify(wishlistArr))
+                alert("Product added to Wishlist");
+               
+            }
+               
+            else {
+                alert("Product already in Wishlist");
+              
+            }
+    
+               
+            }
+    
+    
+    </script>

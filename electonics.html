@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link rel="stylesheet"href="fashion.css">
+</head>
+<body>
+    <div id="head">
+        <h3>FOR ONLINE PAYMENT EXTRA ₹100 DISCOUNT ON ORDERS ABOVE ₹500</h3>
+    </div>
+    <div id="heading">
+        <div>
+            <input type="search" id="sea" placeholder="Search here.."/>
+        </div>
+        <div>
+            <img class="image" src="https://www.uboric.com/wp-content/uploads/2018/08/uboric.svg"  alt="error"/>
+        </div>
+        <div>
+            
+            <a href="cart.html">
+                <img class="image2" src="https://thumbs.dreamstime.com/b/add-to-cart-icon-adding-shopping-cart-well-organized-fully-editable-add-to-cart-icon-adding-shopping-cart-any-use-like-167547952.jpg" alt="error"/>
+            </a>
+
+        </div>
+       
+    </div>
+    <div id="navbar">
+        <div>
+            <a href="home.html">HOME </a>
+        </div>
+        <div>
+           <select name="" id="">
+                <option value="none"> Show all Categories</option>
+                <option value= "Fashion" >Fashion</option>
+                <option value=" Accessories"> Accessories</option>
+                <option value="Health & Personal Care">Health & Persoanl Care</option>
+                <option value="Electronics "> Electronics</option>
+                <option value="Electric Appliances">Electric Appliances</option>
+                <option value="Painting">Painting</option>
+                <option value="Anti puncture Liquid ">Anti Puncture Liquid</option>
+                
+
+            </select>
+        </div>
+        <div>
+            <a href="signin.html">Customer/Guest login</a>
+        </div>
+        <div>
+            <a href="Mens.html">Mens</a>
+        </div>
+        <div>
+            <a href="womens.html">Womens</a>
+        </div>
+
+        <div>
+            <a href="electonics.html">Electronics</a>
+        </div>
+
+        <div>
+            <a href="wishlist.html">Wishlist</a>
+        </div>
+
+    </div>
+    <div id="cart">
+        <h1>Electronics</h1>
+        <p>Home > Electronics</p>
+
+    </div>
+    
+    <div id="topimage"><img src="https://imageio.forbes.com/blogs-images/forbes-finds/files/2018/07/1-best-bluetooth-headphones.jpg?format=jpg&width=960" alt=""></div>
+    <select name="price" id="price">
+        <option value="none">Sort by price</option>
+        <option value="high">High to Low</option>
+        <option value="low">Low to High</option>
+    </select>
+    <div id="container"></div>
+</body>
+</html>
+
+<script>
+    
+     var electronicsData = [
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/02/SONIC1_ORANGE_result-e1614411329411.jpg",
+                name: "QOR9 SONIC ORANGE Magnet Wireless Bluetooth",
+                price: 899,
+                quantity: 1,
+                finalprice: 899,
+                strikedoffprice: 1799.50
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/06/photo_2021-06-13_09-43-42-400x400.jpg",
+                name: "PACK of QOR9 Yuva Wireless Bluetooth",
+                price: 999,
+                quantity: 1,
+                finalprice: 9999,
+            strikedoffprice: 3451.71
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/06/photo_2021-06-13_09-51-29-400x400.jpg",
+                name: "PACK of QOR9 SONIC RED  ",
+                price: 2357.90,
+                quantity: 1,
+                finalprice: 2357.90,
+           strikedoffprice: 2908.26
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/09/1_500x.jpg",
+                name: "3213 Wired Headphone ",
+                price: 714,
+                quantity: 1,
+                finalprice: 714,
+            strikedoffprice:999
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/09/1_4475c045-47e6-48c2-81e2-fa8f4d7d5a94_500x.jpg",
+                name: "Hoop2 Earphones",
+                price: 1099,
+                quantity: 1,
+                finalprice: 1099,
+            strikedoffprice: 1647.74
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/09/NECTORPROCOR1135-2_500x.jpg",
+                name: "Nector Bluetooth Stereo Nackband",
+                price: 1999,
+                quantity: 1,
+                finalprice: 1999,
+            strikedoffprice: 2475.28
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/09/NECTORPROCOR1135-7_500x.jpg",
+                name: "Nector Pro Bluetooth Stereo Neckband ",
+                price: 2599,
+                quantity: 1,
+                finalprice: 2599,
+            strikedoffprice: 3736.14
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/09/Untitleddesign_2_500x.jpg",
+                name: "Powerbuds + Power Bank ",
+                price: 3999,
+                quantity: 1,
+                finalprice: 3999,
+            strikedoffprice: 5296.27
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/09/1_c0d3db41-48d4-4504-8068-88f206a56806_500x.jpg",
+                name: "Aquaboom Portable Speaker ",
+                price: 1399,
+                quantity: 1,
+                finalprice: 1399,
+            strikedoffprice: 2999
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/09/Mudisc_500x.jpg",
+                name: "MuDisc Portable Speaker",
+                price: 1199,
+                quantity: 1,
+                finalprice: 1199,
+            strikedoffprice: 2499
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/09/1_a5ba58b2-6a03-49fa-b34f-e8325a6522dc_500x.jpg",
+                name: "Sushi Wireless Bluetooth Portable Speaker ",
+                price: 1776.73,
+                quantity: 1,
+                finalprice: 1776.73,
+            strikedoffprice: 2534.70
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/07/1-65.jpg",
+                name: "Ambrane BT-47 (5 Watt Portable Bluetooth)",
+                price: 1868.73,
+                quantity: 1,
+                finalprice: 1868.73,
+            strikedoffprice: 2499.16
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/07/1-66.jpg",
+                name: "Ambrane BT-83 (10 Watt Portable Bluetooth)",
+                price: 2998,
+                quantity: 1,
+                finalprice: 2998,
+            strikedoffprice: 3468.
+   
+         },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/07/1-67.jpg",
+                name: "Ambrane Fireboom 20W True Wireless Bluetooth",
+                price: 4921,
+                quantity: 1,
+                finalprice: 4921,
+            strikedoffprice: 5257.18
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/07/1-96.jpg",
+                name: "Ambrane Pulse Full Touch Control Smart Watch ",
+                price: 2824,
+                quantity: 1,
+                finalprice: 2824,
+            strikedoffprice: 5239
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/01/photo_2022-01-09_11-38-49-400x395.jpg",
+                name: "Qor9 pro Bluetooth Calling Smart Watch ",
+                price: 1999,
+                quantity: 1,
+                finalprice: 1999,
+            strikedoffprice: 4999
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/04/51oCS5ypHOL._SL1000_-400x400.jpg",
+                name: "Philips Body Groom BG1024 Battery",
+                price: 1364,
+                quantity: 1,
+                finalprice: 1364,
+            strikedoffprice: 1495.50
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/04/21pDA9xr5JL.jpg",
+                name: "Philips BT12230/15 Skin-friendly Beard trimmer ",
+                price: 899,
+                quantity: 1,
+                finalprice: 899,
+            strikedoffprice: 955
+   
+         },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/04/21S9ZpGp6tL.jpg",
+                name: "Philips BT12235/15 Skin-friendly Beard trimmer",
+                price: 1029,
+                quantity: 1,
+                finalprice: 1029,
+            strikedoffprice: 1957.90
+   
+        },
+
+        {
+            image_url: "https://www.uboric.com/wp-content/uploads/2022/04/51hC24pg9qL._SL1500_-400x400.jpg",
+            name: "Philips BT3203/15 cordless rechargeble Beard trimmer",
+            price: 1419,
+            quantity: 1,
+            finalprice: 1419,
+            strikedoffprice: 1495.45
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/04/617WV3K81EL._SL1500_-400x400.jpg",
+                name: "Philips BT3221/15 corded & cordless Titanium...",
+                price: 2186.17,
+                quantity: 1,
+                finalprice: 2186.17,
+            strikedoffprice: 2751.02
+   
+        },
+        
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/04/51cgb3TAomL._SL1080_-400x400.jpg",
+                name: "PHilips Multi Grooming MG7707/15 Beard Trimmer",
+                price: 3192.66,
+                quantity: 1,
+                finalprice: 3192.66,
+            strikedoffprice: 3843.75
+   
+        },
+            {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/07/1-400x309.jpg",
+                name: "Philips Beard Trimmer (BT 3203/15) & Body Gooming Beard Trimmer",
+                price: 38131.37,
+                quantity: 1,
+                finalprice: 38131.37,
+            strikedoffprice: 45286.06
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-01-18/eMeet-C960-1080P-Webcam-with-Privacy-Cover-Black-494153-0._w280_p1_.jpg",
+                name: "eMeet C960 1080P Webcam ",
+                price: 2593,
+                quantity: 1,
+                finalprice: 2593,
+            strikedoffprice: 4952
+   
+        },
+        {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/04/51CLcJ8pTRL._SL1500_-400x400.jpg",
+                name: "Philips BHH816/00Crimp, Straighte",
+                price: 4593,
+                quantity: 1,
+                finalprice: 4593,
+            strikedoffprice: 4952
+   
+        },
+        {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/04/31Tw0kj55sL.jpg",
+                name: "Philips BHs378/10 Kerashine Straighter ",
+                price: 2593,
+                quantity: 1,
+                finalprice: 2593,
+            strikedoffprice: 3952
+   
+        },
+        {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/04/61jWimZTcSS._SL1500_-400x400.jpg",
+                name: "Philips BHS393/40 Straightener with skillProtect Technology... ",
+                price: 1593,
+                quantity: 1,
+                finalprice: 1593,
+            strikedoffprice: 1952
+   
+        },
+        {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/04/21fzzG8ATvL.jpg",
+                name: "Philips Hair Dryer BHC010/10",
+                price: 1293,
+                quantity: 1,
+                finalprice: 1293,
+            strikedoffprice: 1952
+   
+        },
+        {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/04/51RgsQbXEmL._SL1500_-400x500.jpg",
+                name: "Philips HP8144 Hair Dryer (violet)",
+                price: 993,
+                quantity: 1,
+                finalprice: 993,
+            strikedoffprice: 1252
+   
+        },
+        {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/02/7542a9cc13ee5f1692b8983fcd1655d3-400x400.jpg",
+                name: "Amour V7s 3-in-1 Smart Robotic Vaccum...",
+                price: 24999,
+                quantity: 1,
+                finalprice: 24999,
+            strikedoffprice: 34999
+   
+        },
+        {
+                image_url: "https://www.uboric.com/wp-content/uploads/2022/02/1d975428c35df0023afe1362079c2364-300x300.jpg",
+                name: "iLife Velway V8s Smart Robotic Vacuum....",
+                price: 29999,
+                quantity: 1,
+                finalprice: 29999,
+            strikedoffprice: 49999
+   
+        },
+        {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/09/Ace-2_500x.jpg",
+                name: "Ace Powerbank",
+                price: 1299,
+                quantity: 1,
+                finalprice: 1299,
+            strikedoffprice: 2999
+   
+        },
+        {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/07/1-37.jpg",
+                name: "Ambrane Stylo 10K (PP-102) 10000MAH",
+                price: 1599,
+                quantity: 1,
+                finalprice: 1599,
+            strikedoffprice: 2099
+   
+        },
+        {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/07/1-84.jpg",
+                name: "Ambrane Stylo 10K (PP-102) 10000MAH",
+                price: 1599,
+                quantity: 1,
+                finalprice: 1599,
+            strikedoffprice: 2099
+   
+        },
+        {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/07/1-43.jpg",
+                name: "Ambrane Wireless Charger-WC-38",
+                price: 1499,
+                quantity: 1,
+                finalprice: 1499,
+            strikedoffprice: 1999
+   
+        },
+        {
+                image_url: "https://www.uboric.com/wp-content/uploads/2021/07/1-39.jpg",
+                name: "PP-125 10,000MAH Lithium Polymer Powerbank",
+                price: 1499,
+                quantity: 1,
+                finalprice: 1499,
+            strikedoffprice: 1999
+   
+        },
+        
+        ];
+
+        
+            var Products = document.querySelector("#container");
+            display(electronicsData)
+
+          
+
+          
+             document.querySelector("#price").addEventListener("change",priceFn)
+             function priceFn(){
+                 var selected = document.querySelector("#price").value;
+                    console.log(selected);
+                 
+                   
+                    if(selected == "high")
+                    {
+                        var output = electronicsData.sort(function (a,b){
+                           return b.price-a.price
+                        });
+                        display(output)
+                        console.log(output);
+                    }
+
+                    else if (selected == "low") {
+                     var output = electronicsData.sort(function (a, b) {
+                         return a.price - b.price
+                     });
+                     display(output)
+                     console.log(output);
+                 }
+
+                 else
+                 {
+                     display(electronicsData);
+                 }
+ 
+                 
+             }
+            function display(electronicsData) {
+                
+                document.querySelector("#container").innerHTML=""
+
+
+                electronicsData.forEach(function (elem) {
+                    var card = document.createElement("div");
+
+                    var image = document.createElement("img");
+                    image.src = elem.image_url;
+
+                    var h4 = document.createElement("h4");
+                    h4.innerText = elem.name;
+
+                    var p = document.createElement("p");
+                    p.innerText = "₹"+" "+elem.price;
+
+                    var sub = document.createElement("div")
+                    sub.setAttribute("id","sub")
+
+                    var wishlist = document.createElement("button")
+                    wishlist.innerText = "Wishlist"
+                    wishlist.addEventListener("click", function () {
+                        wishlistFn(elem)
+                    })
+                    var button = document.createElement("button");
+                    button.innerText = "Add to Cart";
+                    button.addEventListener("click", function () {
+                        cartFunc(elem);
+                    })
+                    sub.append(wishlist, button)
+                    card.append(image, h4, p, sub)
+                    
+                    document.querySelector("#container").append(card)
+                })
+            }
+
+
+            var CartArr = JSON.parse(localStorage.getItem("Cart_Data")) || [];
+
+            function cartFunc(elem) {
+              
+
+                var bag = CartArr.filter(function (data) {
+                    return data == elem;
+                })
+                if (bag.length == 0) {
+                    console.log(elem)
+                    CartArr.push(elem);
+                    localStorage.setItem("Cart_Data", JSON.stringify(CartArr));
+                    alert("Product Added Successfully")
+
+                }
+
+                else {
+                    alert("Product already in Cart")
+                }
+
+            }
+
+  var wishlistArr = JSON.parse(localStorage.getItem("Wishlist_Data")) || [];
+
+
+    function wishlistFn(elem) {
+
+       
+        var bag1 = wishlistArr.filter(function(data1) {
+            return data1 == elem;
+        })
+
+        if(bag1.length==0)
+        {
+            console.log(bag1.length)
+            wishlistArr.push(elem)
+            console.log(wishlistArr);
+            localStorage.setItem("Wishlist_Data", JSON.stringify(wishlistArr))
+            //window.location.reload();
+            alert("Product added to Wishlist");
+        }
+           
+        else {
+            alert("Product already in Wishlist");
+        }
+
+           
+        }
+
+
+</script>
